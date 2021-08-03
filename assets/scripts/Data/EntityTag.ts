@@ -1,4 +1,4 @@
 export enum EntityTag {
-    enemy,
-    team,
+    enemy = 1,
+    team = 2,
 }

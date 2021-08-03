@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="154,66">
+  <displayList>
+    <text id="n0_is8j" name="tip" xy="0,0" pivot="0.5,0.5" size="154,66" fontSize="50" color="#ff0000" align="center" vAlign="middle" strokeColor="#ffffff" text="-10000"/>
+  </displayList>
+  <relation target="n0_is8j" sidePair="rightext-right,bottomext-bottom"/>
+</component>

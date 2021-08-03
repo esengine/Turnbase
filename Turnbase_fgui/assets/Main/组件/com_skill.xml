@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="196,245" pivot="0.5,0.5">
+  <controller name="c1" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <movieclip id="n0_is8j" name="skill1" src="mfjq4e" fileName="组件/Movie_Skill_001.jta" xy="-43,-48">
+      <gearDisplay controller="c1" pages="0"/>
+    </movieclip>
+    <movieclip id="n1_is8j" name="skill2" src="is8j4t" fileName="组件/Movie_Skill_002.jta" xy="-18,-54">
+      <gearDisplay controller="c1" pages="1"/>
+    </movieclip>
+    <movieclip id="n2_is8j" name="skill3" src="is8j4u" fileName="组件/Movie_Skill_003.jta" xy="-7,-27">
+      <gearDisplay controller="c1" pages="2"/>
+    </movieclip>
+  </displayList>
+</component>
