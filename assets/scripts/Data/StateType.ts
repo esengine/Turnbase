@@ -2,5 +2,7 @@ export enum StateType {
     idle,
     move,
     attack,
-    move_back
+    move_back,
+    hurt,
+    dead,
 }

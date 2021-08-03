@@ -1,8 +1,10 @@
+import { BattleComponent } from "../Components/BattleComponent";
 import { MoveComponent } from "../Components/MoveComponent";
 import { PropertyComponent } from "../Components/PropertyComponent";
 import { SkillComponent } from "../Components/SkillComponent";
 import { StateComponent } from "../Components/StateComponent";
 import { TargetComponent } from "../Components/TargetComponent";
+import { ConstData } from "../Data/ConstData";
 import { EntityTag } from "../Data/EntityTag";
 import { StateType } from "../Data/StateType";
 import { AttackState } from "../States/AttackState";
@@ -19,7 +21,7 @@ export class AttackSystem extends es.EntityProcessingSystem {
             if (!c_target.target.transform.position.equals(entity.transform.position, 10)) {
                 const c_move = entity.addComponent(new MoveComponent());
                 const attackPos = this.getAttackPos(c_target.target, c_target.target.transform.position);
-                c_move.setMoveTime(1);
+                c_move.setMoveTime(ConstData.attack_move);
                 c_move.setMovePos(attackPos.x, attackPos.y);
                 c_state.changeStateType(StateType.move);
             }
@@ -30,7 +32,7 @@ export class AttackSystem extends es.EntityProcessingSystem {
             if (attackState.attackFinish) {
                 const c_property = entity.getComponent(PropertyComponent);
                 const c_move = entity.addComponent(new MoveComponent());
-                c_move.setMoveTime(1);
+                c_move.setMoveTime(ConstData.attack_move_back);
                 c_move.setMovePos(c_property.pos.x, c_property.pos.y);
                 c_state.changeStateType(StateType.move_back);
             }
@@ -38,6 +40,10 @@ export class AttackSystem extends es.EntityProcessingSystem {
             c_state.changeStateType(StateType.idle);
             // 结束目标
             entity.removeComponent(c_target);
+            // 结束攻击频次
+            const c_battle = es.Core.scene.findComponentOfType(BattleComponent);
+            c_battle.setAttack(false);
+            c_battle.attack_index ++;
         }
     }
 

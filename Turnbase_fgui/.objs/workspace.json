@@ -1,0 +1,34 @@
+{
+  "libview.firstColumnWidth": 283,
+  "libview.iconScale": 0,
+  "backgroundColor": 6710886,
+  "auxline1": true,
+  "canvasColor": 10066329,
+  "auxline2": true,
+  "doc.activeDoc": "ui://ogcji5i7mlyp0",
+  "libview.twoColumn": false,
+  "libview.expandedNodes": [
+    "ogcji5i7",
+    "/",
+    "ogcji5i7",
+    "/资源/",
+    "ogcji5i7",
+    "/资源/boss选择/",
+    "ogcji5i7",
+    "/资源/对战/",
+    "ogcji5i7",
+    "/资源/对战/人3/",
+    "ogcji5i7",
+    "/组件/"
+  ],
+  "doc.openedDocs": [
+    "ui://ogcji5i7mlyp0",
+    "ui://ogcji5i7mfjq4i",
+    "ui://ogcji5i7mfjq4k",
+    "ui://ogcji5i7mfjq4j"
+  ],
+  "snapToGrid": true,
+  "gridColor": 80,
+  "libview.currentGroup": "",
+  "gridSize": 30
+}

@@ -85,7 +85,7 @@ export class BattleSystem extends es.EntityProcessingSystem {
         for (let i = 0; i < entities.length; i ++) {
             const entity = entities[i];
             const c_property = entity.getComponent(PropertyComponent);
-            if (c_property.index == index) {
+            if (c_property && c_property.index == index) {
                 return entity;
             }
         }

@@ -14,6 +14,8 @@ export default class Main extends cc.Component {
     start () {
         es.Core.create(false);
         es.Core.scene = new MainScene();
+
+        fgui.GRoot.create();
     }
 
     update (dt) {

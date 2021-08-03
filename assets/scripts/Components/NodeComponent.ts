@@ -1,4 +1,4 @@
-export class NodeComponent extends es.Component implements es.IUpdatable {
+export class NodeComponent extends es.Component {
     public node: cc.Node;
 
     constructor(node: cc.Node) {
@@ -12,21 +12,17 @@ export class NodeComponent extends es.Component implements es.IUpdatable {
     }
 
     public onEntityTransformChanged(componentTransform: es.ComponentTransform) {
-        // switch (componentTransform) {
-        //     case es.ComponentTransform.position:
-        //         this.node.setPosition(this.transform.position.x, this.transform.position.y);
-        //         break;
-        //     case es.ComponentTransform.rotation:
-        //         this.node.angle = this.transform.rotation;
-        //         break;
-        //     case es.ComponentTransform.scale:
-        //         this.node.setScale(this.transform.scale.x);
-        //         break;
-        // }
-    }
-
-    update() {
-        this.node.setPosition(this.transform.position.x, this.transform.position.y);
+        switch (componentTransform) {
+            case es.ComponentTransform.position:
+                this.node.setPosition(this.transform.position.x, this.transform.position.y);
+                break;
+            case es.ComponentTransform.rotation:
+                this.node.angle = this.transform.rotation;
+                break;
+            case es.ComponentTransform.scale:
+                this.node.setScale(this.transform.scale.x);
+                break;
+        }
     }
 
     private syncTransform() {

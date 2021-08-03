@@ -9,8 +9,13 @@ import { BattleSystem } from "../Systems/BattleSystem";
 import { MoveSystem } from "../Systems/MoveSystem";
 
 export class MainScene extends es.Scene {
-    private enemyNode: cc.Node;
-    private teamNode: cc.Node;
+    private _enemyNode: cc.Node;
+    private _teamNode: cc.Node;
+    private _canvas: cc.Node;
+
+    public get canvas() {
+        return this._canvas;
+    }
 
     initialize() {
         this.addEntityProcessor(new BattleSystem());
@@ -19,8 +24,9 @@ export class MainScene extends es.Scene {
     }
 
     onStart() {
-        this.enemyNode = cc.find('Canvas/EnemyNode');
-        this.teamNode = cc.find('Canvas/TeamNode');
+        this._canvas = cc.find('Canvas');
+        this._enemyNode = cc.find('EnemyNode', this._canvas);
+        this._teamNode = cc.find('TeamNode', this._canvas);
 
         this.createEnemyEntities();
         this.createTeamEntities();
@@ -30,8 +36,8 @@ export class MainScene extends es.Scene {
     }
 
     private createEnemyEntities() {
-        for (let i = 0; i < this.enemyNode.childrenCount; i ++) {
-            const node = this.enemyNode.children[i];
+        for (let i = 0; i < this._enemyNode.childrenCount; i ++) {
+            const node = this._enemyNode.children[i];
             const enemyEntity = this.createEntity('enemy_' + i);
             enemyEntity.tag = EntityTag.enemy;
             enemyEntity.addComponent(new NodeComponent(node));
@@ -43,8 +49,8 @@ export class MainScene extends es.Scene {
     }
 
     private createTeamEntities() {
-        for (let i = 0; i < this.teamNode.childrenCount; i ++) {
-            const node = this.teamNode.children[i];
+        for (let i = 0; i < this._teamNode.childrenCount; i ++) {
+            const node = this._teamNode.children[i];
             const teamEntity = this.createEntity('team_' + i);
             teamEntity.tag = EntityTag.team;
             teamEntity.addComponent(new NodeComponent(node));
