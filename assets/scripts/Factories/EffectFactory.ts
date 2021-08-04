@@ -1,7 +1,7 @@
 import { HitEffectComponent } from "../Components/HitEffectComponent";
 import { PrefabComponent } from "../Components/PrefabComponent";
 import { ViewTipComponent } from "../Components/UI/ViewTipComponent";
-import { SkillEffectComponent } from "../SkillEffectComponent";
+import { SkillEffectComponent } from "../Components/SkillEffectComponent";
 
 export class EffectFactory {
     public static createHurtEffect(text: string, pos: es.Vector2) {

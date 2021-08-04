@@ -5392,6 +5392,7 @@ declare module es {
          * @param obj
          */
         static free<T>(type: new (...args: any[]) => T, obj: T): void;
+        private static checkCreate;
     }
     interface IPoolable {
         /**

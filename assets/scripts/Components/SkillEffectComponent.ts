@@ -1,6 +1,6 @@
-import { NodeComponent } from "./Components/NodeComponent";
-import MainBinder from "./FGUI/Main/MainBinder";
-import UI_com_skill from "./FGUI/Main/UI_com_skill";
+import { NodeComponent } from "./NodeComponent";
+import MainBinder from "../FGUI/Main/MainBinder";
+import UI_com_skill from "../FGUI/Main/UI_com_skill";
 
 export class SkillEffectComponent extends es.Component implements es.IUpdatable {
     private _effect: UI_com_skill;
