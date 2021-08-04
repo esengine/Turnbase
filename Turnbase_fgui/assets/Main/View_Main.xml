@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,1366">
+  <displayList>
+    <image id="n1_mfjq" name="n1" src="mfjq1b" fileName="资源/对战/01.png" xy="0,0"/>
+    <component id="n2_mfjq" name="team_0" src="is8j4p" fileName="组件/com_team_001.xml" xy="571,811" pivot="0.5,0.5" group="n10_is8j"/>
+    <component id="n9_is8j" name="team_2" src="is8j4p" fileName="组件/com_team_001.xml" xy="820,430" pivot="0.5,0.5" group="n10_is8j"/>
+    <component id="n12_is8j" name="team_1" src="is8j4v" fileName="com_team_002.xml" xy="678,608" group="n10_is8j"/>
+    <group id="n10_is8j" name="team" xy="571,430" size="353,513" advanced="true"/>
+    <component id="n5_mfjq" name="enemy_2" src="is8j4n" fileName="组件/com_enemy_001.xml" xy="419,80" pivot="0.5,0.5" group="n11_is8j"/>
+    <component id="n6_mfjq" name="enemy_1" src="is8j4m" fileName="组件/com_enemy_002.xml" xy="225,300" pivot="0.5,0.5" group="n11_is8j"/>
+    <component id="n7_mfjq" name="enemy_0" src="is8j4o" fileName="com_enemy_003.xml" xy="67,546" pivot="0.5,0.5" group="n11_is8j"/>
+    <group id="n11_is8j" name="enemy" xy="67,80" size="527,635" advanced="true"/>
+  </displayList>
+</component>

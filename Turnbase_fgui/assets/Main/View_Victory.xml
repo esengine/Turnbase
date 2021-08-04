@@ -3,8 +3,10 @@
   <displayList>
     <image id="n1_mfjq" name="n1" src="mfjq3z" fileName="资源/胜利界面/beijing1.png" xy="0,0"/>
     <image id="n2_mfjq" name="n2" src="mfjq48" fileName="资源/胜利界面/组137.png" xy="237,467" group="n7_mfjq"/>
-    <component id="n5_mfjq" name="n5" src="mfjq4j" fileName="组件/btn_next.xml" xy="550,786" group="n7_mfjq"/>
-    <component id="n6_mfjq" name="n6" src="mfjq4k" fileName="组件/btn_return.xml" xy="388,786" group="n7_mfjq"/>
-    <group id="n7_mfjq" name="n7" xy="237,467" size="550,432"/>
+    <component id="n5_mfjq" name="btn_next" src="mfjq4j" fileName="组件/btn_next.xml" xy="484,786" group="n7_mfjq"/>
+    <component id="n6_mfjq" name="btn_return" src="mfjq4k" fileName="组件/btn_return.xml" xy="388,786" group="n7_mfjq" visible="false"/>
+    <group id="n7_mfjq" name="n7" xy="237,467" size="550,432" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
   </displayList>
 </component>

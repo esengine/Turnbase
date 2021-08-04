@@ -18,6 +18,7 @@ export class AttackSystem extends es.EntityProcessingSystem {
         const c_target = entity.getComponent(TargetComponent);
         const c_state = entity.getComponent(StateComponent);
         if (c_state.stateType == StateType.idle) {
+            /** 相邻误差10像素内 */
             if (!c_target.target.transform.position.equals(entity.transform.position, 10)) {
                 const c_move = entity.addComponent(new MoveComponent());
                 const attackPos = this.getAttackPos(c_target.target, c_target.target.transform.position);
@@ -47,11 +48,17 @@ export class AttackSystem extends es.EntityProcessingSystem {
         }
     }
 
+    /**
+     * 获取攻击位置
+     * @param target 
+     * @param pos 
+     * @returns 
+     */
     private getAttackPos(target: es.Entity, pos: es.Vector2): es.Vector2 {
         if (target.tag == EntityTag.enemy) {
-            return pos.add(new es.Vector2(50, 0));
+            return pos.add(new es.Vector2(150, 50));
         } else if(target.tag == EntityTag.team) {
-            return pos.sub(new es.Vector2(50, 0));
+            return pos.sub(new es.Vector2(150, 50));
         }
 
         throw new Error('获取攻击位置失败');

@@ -1,5 +1,5 @@
 {
-  "path": "D:\\project\\Turnbase\\assets\\resources",
+  "path": "E:\\Turnbase\\assets\\resources",
   "branchPath": "",
   "fileExtension": "bin",
   "packageCount": 2,
@@ -9,7 +9,7 @@
   "compressPNG": false,
   "codeGeneration": {
     "allowGenCode": true,
-    "codePath": "D:\\project\\Turnbase\\assets\\scripts\\FGUI",
+    "codePath": "E:\\Turnbase\\assets\\scripts\\FGUI",
     "classNamePrefix": "UI_",
     "memberNamePrefix": "m_",
     "packageName": null,

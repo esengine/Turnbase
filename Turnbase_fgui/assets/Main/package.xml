@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="ogcji5i7">
   <resources>
-    <component id="mlyp0" name="MainScene.xml" path="/" exported="true"/>
+    <component id="mlyp0" name="View_Main.xml" path="/" exported="true"/>
     <image id="mfjq1" name="效果1.jpg" path="/资源/"/>
     <image id="mfjq2" name="效果2.jpg" path="/资源/"/>
     <image id="mfjq3" name="效果3.jpg" path="/资源/"/>
@@ -161,12 +161,22 @@
     <movieclip id="mfjq4d" name="Movie_Enemy_003.jta" path="/组件/"/>
     <movieclip id="mfjq4e" name="Movie_Skill_001.jta" path="/组件/"/>
     <movieclip id="mfjq4f" name="Movie_Human_001.jta" path="/组件/"/>
-    <movieclip id="mfjq4g" name="Movie_HitEffect_001.jta" path="/组件/"/>
-    <movieclip id="mfjq4h" name="Movie_HitEffect_002.jta" path="/组件/"/>
+    <movieclip id="mfjq4g" name="Movie_HitEffect_001.jta" path="/组件/" exported="true"/>
+    <movieclip id="mfjq4h" name="Movie_HitEffect_002.jta" path="/组件/" exported="true"/>
     <component id="mfjq4i" name="View_Victory.xml" path="/" exported="true"/>
     <component id="mfjq4j" name="btn_next.xml" path="/组件/"/>
     <component id="mfjq4k" name="btn_return.xml" path="/组件/"/>
     <movieclip id="mfjq4l" name="Movie_Human_003.jta" path="/组件/"/>
+    <component id="is8j4m" name="com_enemy_002.xml" path="/组件/"/>
+    <component id="is8j4n" name="com_enemy_001.xml" path="/组件/"/>
+    <component id="is8j4o" name="com_enemy_003.xml" path="/"/>
+    <component id="is8j4p" name="com_team_001.xml" path="/组件/"/>
+    <component id="is8j4q" name="View_Tips.xml" path="/组件/" exported="true"/>
+    <component id="is8j4r" name="com_effect_hit.xml" path="/组件/" exported="true"/>
+    <component id="is8j4s" name="com_skill.xml" path="/组件/" exported="true"/>
+    <movieclip id="is8j4t" name="Movie_Skill_002.jta" path="/组件/"/>
+    <movieclip id="is8j4u" name="Movie_Skill_003.jta" path="/组件/"/>
+    <component id="is8j4v" name="com_team_002.xml" path="/"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

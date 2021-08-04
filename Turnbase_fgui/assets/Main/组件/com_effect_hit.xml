@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="196,245" pivot="0.5,0.5">
+  <controller name="c1" pages="0,,1," selected="1"/>
+  <displayList>
+    <movieclip id="n0_is8j" name="effect_0" src="mfjq4g" fileName="组件/Movie_HitEffect_001.jta" xy="35,44">
+      <gearDisplay controller="c1" pages="0"/>
+    </movieclip>
+    <movieclip id="n1_is8j" name="effect_1" src="mfjq4h" fileName="组件/Movie_HitEffect_002.jta" xy="1,33">
+      <gearDisplay controller="c1" pages="1"/>
+    </movieclip>
+  </displayList>
+</component>
